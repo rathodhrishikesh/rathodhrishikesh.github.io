@@ -1,0 +1,118 @@
+html
+{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body
+{
+  font-family: 'Titillium Web', sans-serif;
+  overflow-x: hidden;
+}
+p
+{
+  line-height: 30px;
+}
+.text_blue{color: #00ccff;}
+.text_white{color: white;}
+.text_black{color: black;}
+.back_blue{background-color: #00ccff;}
+.back_white{background-color: white;}
+.back_black{background-color: black;}
+.back_grey{background-color: #4d4d4d;}
+
+.text1{ font-size: 60px; font-weight: bolder;}
+
+.nav_1
+{
+  color: white !important;
+  font-size: 20px;
+}
+.nav_hjr
+{
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";       /* IE 8 */
+  filter: alpha(opacity=50);  /* IE 5-7 */
+  -moz-opacity: 0.8;          /* Netscape */
+  -khtml-opacity: 0.8;        /* Safari 1.x */
+  opacity: 0.8;  
+  box-shadow: 1px 5px black;
+
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+.nav_1:hover
+{
+  color: #00ccff !important;
+  text-decoration: none;
+}
+.para_hjr
+{
+  font-size: 18px;
+}
+.part_1
+{
+  background-color: #4d4d4d;
+  padding: 0.7%;
+  position: sticky;
+  width: 100%;
+}
+.btn:hover
+{
+  color: #00ccff;
+}
+.part_1_1
+{
+  float: right;
+  position: sticky;
+  margin-top: 2%;
+  margin-right: 2%;
+  display: none;
+}
+.part_2
+{
+  padding: 0%
+}
+.part_3
+{
+  padding: 10%;
+}
+.radhika_padding
+{
+ padding-bottom: 1%;
+}
+.home_text
+{
+  padding: 8%;
+  margin-top: 10%;
+}
+.align_center
+{
+  text-align: center;
+}
+.form_button
+{
+  border-radius: 8px;
+  width: 150px;
+}
+.form_button:hover
+{
+  color: white;
+  background-color: #4d4d4d;
+}
+.footer
+{
+  padding: 5%;
+}
+.my_image
+{
+  border-radius: 15px;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px)
+{
+  .my_image
+  {
+    margin-bottom: 10%;
+  }
+}
