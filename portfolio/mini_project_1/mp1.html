@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>ELN Financial Outcome Evaluator</h2>
+		</div>	
+			
+		<div class="section">
+			<h3>What is an ELN?</h3>
+			• An Equity Linked Note (ELN) is issued at a reduced price compared to the Principal Amount.
+			<br>• The gap between the payment made by investors and the amount obtained at maturity constitutes the investor's gain, and is shown as the annualized yield.
+			<br>• Should the underlying stock price stay at or above the Strike Price on the Valuation Date, investors receive the full Principal Amount upon maturity.
+			<br>• If the underlying stock performs under the Strike Price, investors are susceptible to the stock's unfavorable performance.
+        </div>
+		
+		<div class="section">
+			<h3>Project Description:</h3>
+			The "ELN Financial Outcome Evaluator" tool helps an investor to determine the outcome of the structured product investment, on the basis of parameters like Strike Price and Issuer Price.
+        </div>
+
+        <div class="section">
+            <h2>META Profit Case</h2>
+            <h3>Input Screenshot</h3>
+            <img src="https:\\rathodhrishikesh.github.io\\portfolio\\mini_project_1\\META_Profit-Input.png" alt="META Profit Input Screenshot" class="screenshot">
+            <h3>Output Screenshot</h3>
+            <img src="https:\\rathodhrishikesh.github.io\\portfolio\\mini_project_1\\META_Profit-Output.png" alt="META Profit Output Screenshot" class="screenshot">
+			<h3>Findings</h3>
+			<p>
+			Ticker: META
+			<br>Notional: 500000.00
+			<br>Spot Price on Initial Date (02-Feb-2023): 188.77
+			<br>Spot Price on Valuation Date (01-Aug-2023): 322.71
+			<br>Number of Days between Valuation Date and Initial Date: 124 days
+			<br>Strike %: 97.00
+			<br>Strike Price: 183.11
+			<br>Issuer %: 99.00
+			<br>Share Price ABOVE Strike Price on Valuation Date
+			<br>
+			<br>Final Outcome:
+			<br><b><font COLOR="#008000">Profit</font></b> Case: Investor Receives Full Notional
+			<br>Total Profit (Notional - Invested Amount): 5000.00
+			</p>
+        </div>
+
+        <div class="section">
+            <h2>META Loss Case</h2>
+            <h3>Input Screenshot</h3>
+            <img src="https:\\rathodhrishikesh.github.io\\portfolio\\mini_project_1\\META_Loss-Input.png" alt="META Loss Input Screenshot" class="screenshot">
+            <h3>Output Screenshot</h3>
+            <img src="https:\\rathodhrishikesh.github.io\\portfolio\\mini_project_1\\META_Loss-Output.png" alt="META Loss Output Screenshot" class="screenshot">
+			<h3>Findings</h3>
+			<p>
+			Ticker: META
+			<br>Notional: 500000.00
+			<br>Spot Price on Initial Date (02-Aug-2021): 351.95
+			<br>Spot Price on Valuation Date (01-Aug-2023): 322.71
+			<br>Number of Days between Valuation Date and Initial Date: 503 days
+			<br>Strike %: 97.00
+			<br>Strike Price: 341.39
+			<br>Issuer %: 98.50
+			<br>Share Price BELOW Strike Price on Valuation Date
+			<br>
+			<br>Final Outcome:
+			<br><b><font COLOR="#ff0000">Loss</font></b> Case:
+			<br>Investor Receives Number of Shares: 1464.59
+			</p>
+        </div>
+    </div>
+</body>
+</html>
