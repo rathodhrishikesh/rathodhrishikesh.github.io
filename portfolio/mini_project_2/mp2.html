@@ -23,7 +23,7 @@
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
-        .section h2 {
+        .section h3 {
             margin-top: 0;
         }
         .screenshot {
@@ -32,29 +32,124 @@
             border: 1px solid #ddd;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
+		
+		/* Styling for the section container */
+		.section {
+		display: flex;
+		flex-wrap: wrap; /* Allow items to wrap to the next line */
+		justify-content: space-between; /* Distribute items evenly along the line */
+		margin: 20px; /* Add some margin for spacing */
+		}
+		
+		/* Styling for each card within the section */
+		.card {
+		flex: calc(33.33% - 20px); /* Each card takes up roughly one-third of the available space */
+		background-color: #f7f7f7;
+		border: 1px solid #ddd;
+		padding: 20px;
+		margin: 10px; /* Add some margin for spacing between cards */
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		
+		/* Style for headings */
+		h3 {
+		margin-top: 0;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ddd;
+		}
+		
+		/* Style for list items */
+		ul {
+		padding-left: 20px;
+		}
+		
+		/* Style for list item bullets */
+		li {
+		list-style-type: disc;
+		}
+		
     </style>
 </head>
 <body>
     <div class="container">
         <div class="section">
-            <h2>FIX Tag Values Extraction Tool</h2>
+            <h3>FIX Tag Values Extraction Tool</h3>
 		</div>	
 			
 		<div class="section">
-			<h3>What is an ELN?</h3>
-			• FIX Tag Values Extraction Tool
-			<br>• P1
-			<br>• P2
-			<br>• P3
-        </div>
-		
+			<div id="project-details">
+				<h3>Introduction</h3>
+				<ul>
+				<li>The goal of this mini-project was to extract specific tag values from a log file in the FIX (Financial Information eXchange) protocol format and store them in an Excel spreadsheet.</li>
+				<li>The extracted data includes important information from the log, which can then be easily analyzed and visualized for further insights.</li>
+				</ul>
+			</div>
+		</div>
+
 		<div class="section">
-			<h3>Project Description:</h3>
-			<p>
-			read file FIX.4.4-FINIQ_INITIATOR-FINIQ_ACCEPTOR.messages.log
-			<br>make columns in an Excel file: 35, 49, 56, 117, and 6001
-			<br>read every line of the file, and store values of corresponding tags in the Excel
-			</p>
+			<div id="methodology">
+				<h3>Methodology</h3>
+				<ol>
+					<li><strong>Data Extraction:</strong> The Python script reads a log file in the FIX protocol format, iterating through each line. It uses regular expressions to extract specified tag values (such as 35, 49, 56, 117, and 6001) from each line.</li>
+					<li><strong>Data Sanitization:</strong> To ensure compatibility with Excel and prevent errors like IllegalCharacterError, a custom function was implemented to sanitize extracted values. This function removes characters not allowed in Excel sheet names, ensuring data integrity.</li>
+					<li><strong>Data Storage:</strong> Extracted and sanitized tag values are stored in a Pandas DataFrame, which provides a convenient data structure for manipulation.</li>
+					<li><strong>Data Export:</strong> The DataFrame is exported to an Excel file using the Pandas to_excel function, creating a structured dataset that can be easily shared and analyzed.</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="section" style="display: flex;">
+			<!-- Card 1 -->
+			<div class="section" style="flex: 1; margin: 10px;">
+				<div id="technical-skills-concepts">
+					<h3>Technical Skills Used</h3>
+					<ul>
+						<li>Python</li>
+						<li>Excel</li>
+					</ul>
+				</div>
+			</div>
+		
+			<!-- Card 2 -->
+			<div class="section" style="flex: 1; margin: 10px;">
+				<div id="results">
+					<h3>Results</h3>
+					<ul>
+						<li>Extracted specific tag values (35, 49, 56, 117, 6001) from the FIX protocol log file.</li>
+						<li>Handled issues related to illegal characters in tag values and Excel compatibility.</li>
+						<li>Stored the extracted data in an Excel spreadsheet for further analysis.</li>
+					</ul>
+				</div>
+			</div>
+		
+			<!-- Card 3 -->
+			<div class="section" style="flex: 1; margin: 10px;">
+				<div id="concepts-learned">
+					<h3>Concepts Learned</h3>
+					<ul>
+						<li>FIX protocol logs analysis</li>
+						<li>Data Extraction: Regular Expressions and Pattern matching techniques</li>
+						<li>Cross Platform compatibility: Excel and Python</li>
+						<li>Pandas DataFrames: Structured Data storage and Manipulation.</li>
+						<li>Error Handling</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div id="project-outcome">
+				<h3>Project Outcome</h3>
+				<ul>
+				<li>The mini-project successfully demonstrated the extraction of specific tag values from a FIX protocol log file and their storage in an Excel spreadsheet. By addressing compatibility issues and using appropriate data structures and libraries, the project provides a foundation for further analysis, reporting, and visualization of financial data.</li>
+				<li>Overall, this mini-project showcased the practical application of programming skills to process financial data and generate insights in a real-world context.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="section">
+            <h3>User Input</h3>
+            <img src="https:\\rathodhrishikesh.github.io\\portfolio\\mini_project_2\\input.png" alt="Raw Data Screenshot" class="screenshot">
         </div>
 
         <div class="section">
@@ -66,7 +161,7 @@
             <h3>Extracted Data</h3>
             <img src="https:\\rathodhrishikesh.github.io\\portfolio\\mini_project_2\\extracted_data.png" alt="Extracted Data Screenshot" class="screenshot">
         </div>
-
+		
     </div>
 </body>
 </html>
