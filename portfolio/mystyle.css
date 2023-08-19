@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FF00FF;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.section h3 {
+    margin-top: 0;
+}
+.screenshot {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the section container f0f0f0*/
+.section {
+flex-wrap: wrap; /* Allow items to wrap to the next line */
+justify-content: space-between; /* Distribute items evenly along the line */
+margin: 20px; /* Add some margin for spacing */
+}
+
+/* Styling for each card within the section */
+.card {
+flex: calc(33.33% - 20px); /* Each card takes up roughly one-third of the available space */
+background-color: #f7f7f7;
+border: 1px solid #ddd;
+padding: 20px;
+margin: 10px; /* Add some margin for spacing between cards */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for headings */
+h3 {
+margin-top: 0;
+padding-bottom: 10px;
+border-bottom: 1px solid #ddd;
+}
+
+/* Style for list items */
+ul {
+padding-left: 20px;
+}
+
+/* Style for list item bullets */
+li {
+list-style-type: disc;
+}
