@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FF00FF;
+    background-color: #f0f0f0;
 }
 .container {
     max-width: 1200px;
@@ -26,7 +26,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the section container f0f0f0*/
+/* Styling for the section container*/
 .section {
 flex-wrap: wrap; /* Allow items to wrap to the next line */
 justify-content: space-between; /* Distribute items evenly along the line */
