@@ -8,29 +8,19 @@
 </head>
 <body>
     <div class="container">
+	
         <div class="section">
-            <h3>FIX Tag Values Extraction Tool</h3>
+            <h2>FIX Tag Values Extraction Tool</h2>
 		</div>	
 			
 		<div class="section">
 			<div id="project-details">
 				<h3>Introduction</h3>
 				<ul>
-				<li>The goal of this mini-project was to extract specific tag values from a log file in the FIX (Financial Information eXchange) protocol format and store them in an Excel spreadsheet.</li>
-				<li>The extracted data includes important information from the log, which can then be easily analyzed and visualized for further insights.</li>
+				<li>This mini project revolves around efficiently extracting specific tag values from log files in FIX (Financial Information eXchange) protocol format using Python and regular expressions.</li>
+				<li>To ensure compatibility with Excel and maintain data integrity, a custom sanitization function is implemented.</li>
+				<li>The extracted and sanitized data is then exported to an Excel file, facilitating organized and insightful data analysis.</li>
 				</ul>
-			</div>
-		</div>
-
-		<div class="section">
-			<div id="methodology">
-				<h3>Methodology</h3>
-				<ol>
-					<li><strong>Data Extraction:</strong> The Python script reads a log file in the FIX protocol format, iterating through each line. It uses regular expressions to extract specified tag values (such as 35, 49, 56, 117, and 6001) from each line.</li>
-					<li><strong>Data Sanitization:</strong> To ensure compatibility with Excel and prevent errors like IllegalCharacterError, a custom function was implemented to sanitize extracted values. This function removes characters not allowed in Excel sheet names, ensuring data integrity.</li>
-					<li><strong>Data Storage:</strong> Extracted and sanitized tag values are stored in a Pandas DataFrame, which provides a convenient data structure for manipulation.</li>
-					<li><strong>Data Export:</strong> The DataFrame is exported to an Excel file using the Pandas to_excel function, creating a structured dataset that can be easily shared and analyzed.</li>
-				</ol>
 			</div>
 		</div>
 
@@ -51,7 +41,7 @@
 				<div id="results">
 					<h3>Results</h3>
 					<ul>
-						<li>Extracted specific tag values (35, 49, 56, 117, 6001) from the FIX protocol log file.</li>
+						<li>Extracted specific tag values from the FIX protocol log file.</li>
 						<li>Handled issues related to illegal characters in tag values and Excel compatibility.</li>
 						<li>Stored the extracted data in an Excel spreadsheet for further analysis.</li>
 					</ul>
@@ -70,6 +60,18 @@
 						<li>Error Handling</li>
 					</ul>
 				</div>
+			</div>
+		</div>
+		
+		<div class="section">
+			<div id="methodology">
+				<h3>Methodology</h3>
+				<ul>
+					<li><strong>Data Extraction:</strong> The Python script reads a log file in the FIX protocol format, iterating through each line. It uses regular expressions to extract specified tag values (such as 35, 49, 56, 117, and 6001) from each line.</li>
+					<li><strong>Data Sanitization:</strong> To ensure compatibility with Excel, a custom function was implemented to sanitize extracted values. This function removes characters not allowed in Excel sheet names, ensuring data integrity.</li>
+					<li><strong>Data Storage:</strong> Extracted and sanitized tag values are stored in a Pandas DataFrame, which provides a convenient data structure for manipulation.</li>
+					<li><strong>Data Export:</strong> The DataFrame is exported to an Excel file using the Pandas <b>to_excel</b> function, creating a structured dataset that can be easily shared and analyzed.</li>
+				</ul>
 			</div>
 		</div>
 
