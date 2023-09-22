@@ -8,64 +8,33 @@
 </head>
 <body>
     <div class="container">
-	
+
+		<a href="https:\\rathodhrishikesh.github.io\\portfolio\\index.html" class="fixed-button">Home</a>
+
         <div class="section">
             <h2>FIX Protocol Data Extractor</h2>
 			<h6>Authored By: Hrishikesh Rathod</h6>
 		</div>	
 			
-		<div class="section">
-			<div id="project-details">
+		<div class="section" style="display: flex;">
+			<!-- Card 1 -->
+			<div class="section" id="project-details">
 				<h3>Introduction</h3>
 				<ul>
-				<li>This mini project revolves around efficiently extracting specific tag values from log files in FIX (Financial Information eXchange) protocol format using Python and regular expressions.</li>
+				<li>FIX (Financial Information eXchange) protocol is commonly used in financial markets for transaction-related data.</li>
+				<li>This mini project revolves around efficiently extracting specific values from log files that have data in the form of FIX messages.</li>
+				<li>Python was impactful in the use of regular expressions for pattern matching and data extraction from the log files. Regular expressions are powerful tools for parsing and extracting specific values from unstructured text data, making Python an essential choice for this aspect of the project.</li>
 				<li>To ensure compatibility with Excel and maintain data integrity, a custom sanitization function is implemented.</li>
 				<li>The extracted and sanitized data is then exported to an Excel file, facilitating organized and insightful data analysis.</li>
 				</ul>
 			</div>
+			
 		</div>
 
 		<div class="section" style="display: flex;">
-			<!-- Card 1 -->
-			<div class="section" style="flex: 1; margin: 10px;">
-				<div id="technical-skills-concepts">
-					<h3>Technical Skills Used</h3>
-					<ul>
-						<li>Python</li>
-						<li>Excel</li>
-					</ul>
-				</div>
-			</div>
-		
-			<!-- Card 2 -->
-			<div class="section" style="flex: 1; margin: 10px;">
-				<div id="results">
-					<h3>Results</h3>
-					<ul>
-						<li>Extracted specific tag values from the FIX protocol log file.</li>
-						<li>Handled issues related to illegal characters in tag values and Excel compatibility.</li>
-						<li>Stored the extracted data in an Excel spreadsheet for further analysis.</li>
-					</ul>
-				</div>
-			</div>
-		
-			<!-- Card 3 -->
-			<div class="section" style="flex: 1; margin: 10px;">
-				<div id="concepts-learned">
-					<h3>Concepts Learned</h3>
-					<ul>
-						<li>FIX protocol logs analysis</li>
-						<li>Regular expressions and pattern matching techniques</li>
-						<li>Cross platform compatibility between Excel and Python</li>
-						<li>Pandas DataFrames: Structured data storage and manipulation</li>
-						<li>Error handling</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		
-		<div class="section">
-			<div id="methodology">
+			
+			<!-- Card 2.1 -->
+			<div class="section" id="methodology" style="flex: 1; margin: 10px;">
 				<h3>Methodology</h3>
 				<ul>
 					<li><strong>Data Extraction:</strong> The Python script reads a log file in the FIX protocol format, iterating through each line. It uses regular expressions to extract specified tag values (such as 35, 49, 56, 117, and 6001) from each line.</li>
@@ -74,14 +43,26 @@
 					<li><strong>Data Export:</strong> The DataFrame is exported to an Excel file using the Pandas <b>to_excel</b> function, creating a structured dataset that can be easily shared and analyzed.</li>
 				</ul>
 			</div>
-		</div>
-
-		<div class="section">
-			<div id="project-outcome">
-				<h3>Project Outcome</h3>
+			
+			<!-- Card 2.2 -->
+			<div class="section" id="concepts-learned" style="flex: 1; margin: 10px;">
+				<h3>Concepts Learned</h3>
 				<ul>
-				<li>The "FIX Protocol Data Extractor" tool successfully demonstrated the extraction of specific tag values from a FIX protocol log file and their storage in an Excel spreadsheet. By addressing compatibility issues and using appropriate data structures and libraries, the project provides a foundation for further analysis, reporting, and visualization of financial data.</li>
-				<li>Overall, this mini-project showcased the practical application of programming skills to process financial data and generate insights in a real-world context.</li>
+					<li><b>FIX Protocol Logs Analysis:</b> Analyzing log files in FIX (Financial Information eXchange) protocol format, common in financial communication.</li>
+					<li><b>Regular Expressions and Pattern Matching:</b> Leveraging regular expressions for precise text pattern recognition and data extraction.</li>
+					<li><b>Cross-Platform Data Compatibility:</b> Ensuring seamless data exchange between Excel and Python environments, maintaining data integrity.</li>
+					<li><b>Pandas DataFrames:</b> Employing DataFrames for structured data storage and advanced manipulation in Python.</li>
+					<li><b>Error Handling:</b> Implementing robust error-handling mechanisms to gracefully manage exceptions during data processing.</li>
+				</ul>
+			</div>
+		
+			<!-- Card 2.3 -->
+			<div class="section" id="results" style="flex: 1; margin: 10px;">
+				<h3>Results</h3>
+				<ul>
+					<li>The project involves extracting specific data values from log files, which are commonly used in financial markets for transaction-related data.</li>
+					<li>It showcased the practical application of programming skills to process financial data and generate insights in a real-world context.</li>
+					<li>The <b>"FIX Protocol Data Extractor"</b> tool successfully demonstrated the extraction of specific tag values from a FIX protocol log file and their storage in an Excel spreadsheet. By addressing compatibility issues and using appropriate data structures and libraries, the project provides a foundation for further analysis, reporting, and visualization of financial data.</li>
 				</ul>
 			</div>
 		</div>
@@ -98,7 +79,7 @@
 		
 		<div class="section">
             <h3>Extracted Data</h3>
-            <img src="https:\\rathodhrishikesh.github.io\\portfolio\\mini_project_2\\extracted_data.png" alt="Extracted Data Screenshot" class="screenshot">
+            <img src="https:\\rathodhrishikesh.github.io\\portfolio\\mini_project_2\\extracted_data_2.png" alt="Extracted Data Screenshot" class="screenshot">
         </div>
 		
     </div>
