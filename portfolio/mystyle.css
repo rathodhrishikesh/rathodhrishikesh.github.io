@@ -21,6 +21,8 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	flex: 1;
+	margin: 10px;
 }
 
 /* Header style for section titles */
@@ -54,6 +56,28 @@ body {
     padding: 20px;
     margin: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the fixed button */
+.fixed-button {
+    position: fixed;
+    top: 10px; /* Adjust the distance from the bottom as needed */
+    left: 3px; /* Adjust the distance from the right as needed */
+    background-color: transparent; /* Make the button transparent */
+    border: 1px solid #3498db; /* Light border */
+    color: #3498db; /* Text color */
+    outline: none;
+    cursor: pointer;
+    padding: 3px 5px; /* Padding to make the button larger */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 12px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.fixed-button:hover {
+    background-color: #3498db; /* Background color on hover */
+    color: #fff; /* Text color on hover */
 }
 
 /* Enhance headings */
