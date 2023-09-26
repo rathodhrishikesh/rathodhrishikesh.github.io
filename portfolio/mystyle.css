@@ -156,3 +156,8 @@ body {
 	margin-right:0px !important;
 	}
 }
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+}
